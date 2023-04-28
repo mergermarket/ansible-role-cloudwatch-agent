@@ -6,20 +6,20 @@
         "metrics_collected" : {
             "mem" : {
                 "measurement" : [
-                    "mem_used_percent",
-                    "mem_available",
-                    "mem_total"
+                    "used_percent",
+                    "available",
+                    "total"
                 ]
             },
             "swap" : {
                 "measurement" : [
-                    "swap_used_percent"
+                    "used_percent"
                 ]
             },
             "disk" : {
                 "measurement" : [
-                    "disk_available",
-                    "disk_used_percent"
+                    "free",
+                    "used_percent"
                 ],
                 "resources" : [
                     "/"
