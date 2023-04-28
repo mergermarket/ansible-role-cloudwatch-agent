@@ -1,0 +1,30 @@
+{
+    "agent" : {
+        "metrics_collection_interval" : 300
+    },
+    "metrics" : {
+        "metrics_collected" : {
+            "mem" : {
+                "measurement" : [
+                    "mem_used_percent",
+                    "mem_available",
+                    "mem_total"
+                ]
+            },
+            "swap" : {
+                "measurement" : [
+                    "swap_used_percent"
+                ]
+            },
+            "disk" : {
+                "measurement" : [
+                    "disk_available",
+                    "disk_used_percent"
+                ],
+                "resources" : [
+                    "/"
+                ]
+            }
+        }
+    }
+}
