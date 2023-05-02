@@ -3,6 +3,11 @@
         "metrics_collection_interval" : 300
     },
     "metrics" : {
+        "namespace" : "System/Linux",
+        "append_dimensions" : {
+            "AutoScalingGroupName" : "${aws:AutoScalingGroupName}",
+            "InstanceId" : "${aws:InstanceId}"
+        },
         "metrics_collected" : {
             "mem" : {
                 "measurement" : [
